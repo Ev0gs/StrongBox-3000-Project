@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pierr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-09 07:12:36 "/>
+        <attribute name="created" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDc7IjExOjQ0OjA0ICI7Mjc3OA=="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjEyOjMzICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDk6MTc6MzQgIjthbGdvcml0aG1lIHByaW5jaXBhbC5mcHJnOzgzMzY="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjEyOjM2ICI7NTsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Entrez votre lettre d'agent :&quot;" newline="True"/>
+                <declare name="lettre" type="String" array="False" size=""/>
+                <input variable="lettre"/>
+                <output expression="&quot;Entrez votre CARD_ID :&quot;" newline="True"/>
+                <declare name="CARDID" type="Integer" array="False" size=""/>
+                <input variable="CARDID"/>
+                <if expression="lettre=&quot;A&quot; &amp;&amp; CARDID = 1276">
+                    <then>
+                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="lettre=&quot;B&quot; &amp;&amp; CARDID=8954">
+                            <then>
+                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <if expression="lettre=&quot;C&quot; &amp;&amp; CARDID=6285">
+                                    <then>
+                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                        <assign variable="i" expression="1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="lettre=&quot;D&quot; &amp;&amp; CARDID=1846">
+                                            <then>
+                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="lettre=&quot;E&quot; &amp;&amp; CARDID=8234">
+                                                    <then>
+                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                        <assign variable="i" expression="1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="lettre=&quot;F&quot; &amp;&amp; CARDID=1475">
+                                                            <then>
+                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                <assign variable="i" expression="1"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="lettre=&quot;H&quot; &amp;&amp; CARDID=2518">
+                                                                    <then>
+                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                        <assign variable="i" expression="1"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="lettre=&quot;I&quot; &amp;&amp; CARDID=1674">
+                                                                            <then>
+                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                <assign variable="i" expression="1"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="lettre=&quot;J&quot; &amp;&amp; CARDID=2856">
+                                                                                    <then>
+                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                        <assign variable="i" expression="1"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="lettre=&quot;K&quot; &amp;&amp; CARDID=4785">
+                                                                                            <then>
+                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                <assign variable="i" expression="1"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="lettre=&quot;L&quot; &amp;&amp; CARDID=1256">
+                                                                                                    <then>
+                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <if expression="lettre=&quot;M&quot; &amp;&amp; CARDID=2853">
+                                                                                                            <then>
+                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                            </then>
+                                                                                                            <else>
+                                                                                                                <if expression="lettre=&quot;N&quot; &amp;&amp; CARDID=1502">
+                                                                                                                    <then>
+                                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                    </then>
+                                                                                                                    <else>
+                                                                                                                        <if expression="lettre=&quot;O&quot; &amp;&amp; CARDID=1850">
+                                                                                                                            <then>
+                                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                            </then>
+                                                                                                                            <else>
+                                                                                                                                <if expression="lettre=&quot;P&quot; &amp;&amp; CARDID=1812">
+                                                                                                                                    <then>
+                                                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                                    </then>
+                                                                                                                                    <else>
+                                                                                                                                        <if expression="lettre=&quot;Q&quot; &amp;&amp; CARDID=9942">
+                                                                                                                                            <then>
+                                                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                                            </then>
+                                                                                                                                            <else>
+                                                                                                                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="0"/>
+                                                                                                                                            </else>
+                                                                                                                                        </if>
+                                                                                                                                    </else>
+                                                                                                                                </if>
+                                                                                                                            </else>
+                                                                                                                        </if>
+                                                                                                                    </else>
+                                                                                                                </if>
+                                                                                                            </else>
+                                                                                                        </if>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

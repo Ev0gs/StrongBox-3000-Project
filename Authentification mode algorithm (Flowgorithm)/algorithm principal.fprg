@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pierr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-09 07:12:00 "/>
+        <attribute name="created" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDc7IjA5OjE3OjM0ICI7Mjc4OA=="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDg7IjEyOjA1OjAwICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDU6MTY6MzMgIjthbGdvcml0aG1lIE1BMy5mcHJnOzc1NTI="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDg7IjEyOjA1OjI1ICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDU6MTk6MTggIjthbGdvcml0aG1lIE1BNC5mcHJnOzc1NjY="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDg7IjEyOjA4OjIxICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMTE6NDQ6MDQgIjthbGdvcml0aG1lIE1BNS5mcHJnOzc1NTY="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDg7IjEyOjI1OjE3ICI7OTtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wODsiMTE6MTU6NDEgIjthbGdvcml0aG1lIE1BMi5mcHJnOzc1NjQ="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjEyOjAwICI7ODsyODkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Entrez le num&#233;ro du mod&#232;le de votre carte :&quot;" newline="True"/>
+                <declare name="mod&#232;le" type="Integer" array="False" size=""/>
+                <input variable="mod&#232;le"/>
+                <if expression="mod&#232;le = 1">
+                    <then>
+                        <call expression="MA1"/>
+                        <call expression="MA4"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="mod&#232;le = 2">
+                            <then>
+                                <call expression="MA2"/>
+                                <call expression="MA3"/>
+                                <call expression="MA4"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <if expression="mod&#232;le = 3">
+                                    <then>
+                                        <call expression="MA2"/>
+                                        <call expression="MA5"/>
+                                        <assign variable="i" expression="1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="mod&#232;le = 4">
+                                            <then>
+                                                <call expression="MA1"/>
+                                                <call expression="MA4"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="mod&#232;le = 5">
+                                                    <then>
+                                                        <call expression="MA2"/>
+                                                        <call expression="MA5"/>
+                                                        <assign variable="i" expression="1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="mod&#232;le = 6">
+                                                            <then>
+                                                                <call expression="MA1"/>
+                                                                <call expression="MA3"/>
+                                                                <assign variable="i" expression="1"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="mod&#232;le = 7">
+                                                                    <then>
+                                                                        <call expression="MA1"/>
+                                                                        <call expression="MA3"/>
+                                                                        <assign variable="i" expression="1"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="mod&#232;le = 8">
+                                                                            <then>
+                                                                                <call expression="MA1"/>
+                                                                                <call expression="MA2"/>
+                                                                                <call expression="MA3"/>
+                                                                                <call expression="MA5"/>
+                                                                                <assign variable="i" expression="1"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <assign variable="i" expression="0"/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="encrypt" type="Integer" variable="c">
+        <parameters>
+            <parameter name="m" type="Integer" array="False"/>
+            <parameter name="e" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="modexp(m, e, 2881)"/>
+        </body>
+    </function>
+    <function name="MA1" type="None" variable="i">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i==0">
+                <declare name="R&#233;ponse1" type="Integer" array="False" size=""/>
+                <output expression="&quot;Question : Comment s&#8217;appelle le chien du chef?&quot;" newline="True"/>
+                <output expression="&quot;1) Franky&quot;" newline="True"/>
+                <output expression="&quot;2) Rex&quot;" newline="True"/>
+                <output expression="&quot;3) Churchill&quot;" newline="True"/>
+                <output expression="&quot;4) Le chef n'a pas de chien&quot;" newline="True"/>
+                <input variable="R&#233;ponse1"/>
+                <if expression="R&#233;ponse1 = 3">
+                    <then>
+                        <declare name="R&#233;ponse2" type="Integer" array="False" size=""/>
+                        <output expression="&quot;Question : Combien de machines a caf&#233; y a-t-il dans la salle de repos?&quot;" newline="True"/>
+                        <output expression="&quot;1) 1&quot;" newline="True"/>
+                        <output expression="&quot;2) 2&quot;" newline="True"/>
+                        <output expression="&quot;3) 3&quot;" newline="True"/>
+                        <output expression="&quot;4) 10&quot;" newline="True"/>
+                        <input variable="R&#233;ponse2"/>
+                        <if expression="R&#233;ponse2 = 4">
+                            <then>
+                                <declare name="R&#233;ponse3" type="Integer" array="False" size=""/>
+                                <output expression="&quot;Question : Quel est le meilleur anim&#233; parmi ceux-l&#224; ?&quot;" newline="True"/>
+                                <output expression="&quot;1) One Piece&quot;" newline="True"/>
+                                <output expression="&quot;2) Naruto&quot;" newline="True"/>
+                                <output expression="&quot;3) Dragon Ball&quot;" newline="True"/>
+                                <output expression="&quot;4) Bleach&quot;" newline="True"/>
+                                <input variable="R&#233;ponse3"/>
+                                <if expression="R&#233;ponse3 = 1">
+                                    <then>
+                                        <declare name="R&#233;ponse4" type="Integer" array="False" size=""/>
+                                        <output expression="&quot;Question : Quel est le nombre porte bonheur de l'agence?&quot;" newline="True"/>
+                                        <output expression="&quot;1) 4&quot;" newline="True"/>
+                                        <output expression="&quot;2) 8&quot;" newline="True"/>
+                                        <output expression="&quot;3) 1&quot;" newline="True"/>
+                                        <output expression="&quot;4) 0&quot;" newline="True"/>
+                                        <input variable="R&#233;ponse4"/>
+                                        <if expression="R&#233;ponse4 = 3">
+                                            <then>
+                                                <output expression="&quot;R&#233;ponses justes&quot;" newline="True"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                <assign variable="i" expression="0"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                        <assign variable="i" expression="0"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                <assign variable="i" expression="0"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="MA2" type="None" variable="i">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <declare name="c" type="Integer" array="False" size=""/>
+                <declare name="mprime" type="Integer" array="False" size=""/>
+                <output expression="&quot;Entrez votre lettre d'agent :&quot;" newline="True"/>
+                <declare name="Lettre" type="String" array="False" size=""/>
+                <input variable="Lettre"/>
+                <declare name="m" type="Integer" array="False" size=""/>
+                <assign variable="m" expression="randbetween(-2881,2881)"/>
+                <declare name="e" type="Integer" array="False" size=""/>
+                <if expression="Lettre=&quot;A&quot;">
+                    <then>
+                        <assign variable="e" expression="601"/>
+                        <assign variable="c" expression="encrypt(m, e)"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="Lettre=&quot;B&quot;">
+                            <then>
+                                <assign variable="e" expression="619"/>
+                                <assign variable="c" expression="encrypt(m, e)"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <if expression="Lettre=&quot;C&quot;">
+                                    <then>
+                                        <assign variable="e" expression="631"/>
+                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                        <assign variable="i" expression="1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Lettre=&quot;D&quot;">
+                                            <then>
+                                                <assign variable="e" expression="641"/>
+                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Lettre=&quot;E&quot;">
+                                                    <then>
+                                                        <assign variable="e" expression="647"/>
+                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                        <assign variable="i" expression="1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="Lettre=&quot;F&quot;">
+                                                            <then>
+                                                                <assign variable="e" expression="653"/>
+                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                <assign variable="i" expression="1"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="Lettre=&quot;H&quot;">
+                                                                    <then>
+                                                                        <assign variable="e" expression="661"/>
+                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                        <assign variable="i" expression="1"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="Lettre=&quot;I&quot;">
+                                                                            <then>
+                                                                                <assign variable="e" expression="673"/>
+                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                <assign variable="i" expression="1"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="Lettre=&quot;J&quot;">
+                                                                                    <then>
+                                                                                        <assign variable="e" expression="691"/>
+                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                        <assign variable="i" expression="1"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="Lettre=&quot;K&quot;">
+                                                                                            <then>
+                                                                                                <assign variable="e" expression="701"/>
+                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                <assign variable="i" expression="1"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="Lettre=&quot;L&quot;">
+                                                                                                    <then>
+                                                                                                        <assign variable="e" expression="733"/>
+                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <if expression="Lettre=&quot;M&quot;">
+                                                                                                            <then>
+                                                                                                                <assign variable="e" expression="739"/>
+                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                            </then>
+                                                                                                            <else>
+                                                                                                                <if expression="Lettre=&quot;N&quot;">
+                                                                                                                    <then>
+                                                                                                                        <assign variable="e" expression="751"/>
+                                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                    </then>
+                                                                                                                    <else>
+                                                                                                                        <if expression="Lettre=&quot;O&quot;">
+                                                                                                                            <then>
+                                                                                                                                <assign variable="e" expression="797"/>
+                                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                            </then>
+                                                                                                                            <else>
+                                                                                                                                <if expression="Lettre=&quot;P&quot;">
+                                                                                                                                    <then>
+                                                                                                                                        <assign variable="e" expression="809"/>
+                                                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                                    </then>
+                                                                                                                                    <else>
+                                                                                                                                        <if expression="Lettre=&quot;Q&quot;">
+                                                                                                                                            <then>
+                                                                                                                                                <assign variable="e" expression="811"/>
+                                                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                                            </then>
+                                                                                                                                            <else>
+                                                                                                                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="0"/>
+                                                                                                                                            </else>
+                                                                                                                                        </if>
+                                                                                                                                    </else>
+                                                                                                                                </if>
+                                                                                                                            </else>
+                                                                                                                        </if>
+                                                                                                                    </else>
+                                                                                                                </if>
+                                                                                                            </else>
+                                                                                                        </if>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="i == 1">
+                    <then>
+                        <output expression="&quot;Message chiffr&#233; :&quot; &amp; c" newline="True"/>
+                        <output expression="&quot;Saisissez M dans la console :&quot;" newline="True"/>
+                        <input variable="mprime"/>
+                        <if expression="mprime = m">
+                            <then>
+                                <output expression="&quot;Cl&#233; valid&#233;e&quot;" newline="True"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                <assign variable="i" expression="0"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="MA3" type="None" variable="i">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Placez votre oeil devant le capteur, puis appuyer sur 1 quand vous &#234;tes pr&#234;t&quot;" newline="True"/>
+                <declare name="Validation" type="Integer" array="False" size=""/>
+                <input variable="Validation"/>
+                <if expression="Validation = 1">
+                    <then>
+                        <output expression="&quot;Acc&#232;s autoris&#233;&quot;" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="MA4" type="None" variable="i">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Placez votre doigts sur le scanner, puis appuyez sur 1 quand vous &#234;tes pr&#234;t&quot;" newline="True"/>
+                <declare name="Validation" type="Integer" array="False" size=""/>
+                <input variable="Validation"/>
+                <if expression="Validation = 1">
+                    <then>
+                        <output expression="&quot;Acc&#232;s autoris&#233;&quot;" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="MA5" type="None" variable="i">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Entrez votre lettre d'agent :&quot;" newline="True"/>
+                <declare name="lettre" type="String" array="False" size=""/>
+                <input variable="lettre"/>
+                <output expression="&quot;Entrez votre CARD_ID :&quot;" newline="True"/>
+                <declare name="CARDID" type="Integer" array="False" size=""/>
+                <input variable="CARDID"/>
+                <if expression="lettre=&quot;A&quot; &amp;&amp; CARDID = 1276">
+                    <then>
+                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="lettre=&quot;B&quot; &amp;&amp; CARDID=8954">
+                            <then>
+                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <if expression="lettre=&quot;C&quot; &amp;&amp; CARDID=6285">
+                                    <then>
+                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                        <assign variable="i" expression="1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="lettre=&quot;D&quot; &amp;&amp; CARDID=1846">
+                                            <then>
+                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="lettre=&quot;E&quot; &amp;&amp; CARDID=8234">
+                                                    <then>
+                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                        <assign variable="i" expression="1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="lettre=&quot;F&quot; &amp;&amp; CARDID=1475">
+                                                            <then>
+                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                <assign variable="i" expression="1"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="lettre=&quot;H&quot; &amp;&amp; CARDID=2518">
+                                                                    <then>
+                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                        <assign variable="i" expression="1"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="lettre=&quot;I&quot; &amp;&amp; CARDID=1674">
+                                                                            <then>
+                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                <assign variable="i" expression="1"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="lettre=&quot;J&quot; &amp;&amp; CARDID=2856">
+                                                                                    <then>
+                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                        <assign variable="i" expression="1"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="lettre=&quot;K&quot; &amp;&amp; CARDID=4785">
+                                                                                            <then>
+                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                <assign variable="i" expression="1"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="lettre=&quot;L&quot; &amp;&amp; CARDID=1256">
+                                                                                                    <then>
+                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <if expression="lettre=&quot;M&quot; &amp;&amp; CARDID=2853">
+                                                                                                            <then>
+                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                            </then>
+                                                                                                            <else>
+                                                                                                                <if expression="lettre=&quot;N&quot; &amp;&amp; CARDID=1502">
+                                                                                                                    <then>
+                                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                    </then>
+                                                                                                                    <else>
+                                                                                                                        <if expression="lettre=&quot;O&quot; &amp;&amp; CARDID=1850">
+                                                                                                                            <then>
+                                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                            </then>
+                                                                                                                            <else>
+                                                                                                                                <if expression="lettre=&quot;P&quot; &amp;&amp; CARDID=1812">
+                                                                                                                                    <then>
+                                                                                                                                        <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                                    </then>
+                                                                                                                                    <else>
+                                                                                                                                        <if expression="lettre=&quot;Q&quot; &amp;&amp; CARDID=9942">
+                                                                                                                                            <then>
+                                                                                                                                                <output expression="&quot;Correspondance confirm&#233;e&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                                            </then>
+                                                                                                                                            <else>
+                                                                                                                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="0"/>
+                                                                                                                                            </else>
+                                                                                                                                        </if>
+                                                                                                                                    </else>
+                                                                                                                                </if>
+                                                                                                                            </else>
+                                                                                                                        </if>
+                                                                                                                    </else>
+                                                                                                                </if>
+                                                                                                            </else>
+                                                                                                        </if>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="modexp" type="Integer" variable="r">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="e" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <if expression="e &lt; 0">
+                <then>
+                    <output expression="&quot;unhandled case&quot;" newline="True"/>
+                    <call expression="exit(-1)"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(a == 0 || n == 1)">
+                <then>
+                    <assign variable="r" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="r" expression="1"/>
+                    <while expression="e &gt; 0">
+                        <assign variable="r" expression="(r*(a mod n)) mod n"/>
+                        <assign variable="e" expression="e - 1"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="randbetween" type="Integer" variable="number">
+        <parameters>
+            <parameter name="lower" type="Integer" array="False"/>
+            <parameter name="upper" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="random(upper)"/>
+            <while expression="number &lt; lower">
+                <assign variable="number" expression="random(upper)"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

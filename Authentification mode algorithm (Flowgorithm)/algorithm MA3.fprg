@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pierr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-09 07:06:17 "/>
+        <attribute name="created" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDc7IjA1OjE2OjMzICI7Mjc4Mg=="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjA2OjE2ICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDk6MTc6MzQgIjthbGdvcml0aG1lIHByaW5jaXBhbC5mcHJnOzgzNDA="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjA2OjE3ICI7MzsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <output expression="&quot;Placez votre oeil devant le capteur, puis appuyer sur 1 quand vous &#234;tes pr&#234;t&quot;" newline="True"/>
+                <declare name="Validation" type="Integer" array="False" size=""/>
+                <input variable="Validation"/>
+                <if expression="Validation = 1">
+                    <then>
+                        <output expression="&quot;Acc&#232;s autoris&#233;&quot;" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pierr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-09 07:04:05 "/>
+        <attribute name="created" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDc7IjExOjMxOjAxICI7Mjc3MQ=="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjA0OjAyICI7MztwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDk6MTc6MzQgIjthbGdvcml0aG1lIHByaW5jaXBhbC5mcHJnOzgzMzQ="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjA0OjA1ICI7NDsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i==0">
+                <declare name="R&#233;ponse1" type="Integer" array="False" size=""/>
+                <output expression="&quot;Question : Comment s&#8217;appelle le chien du chef?&quot;" newline="True"/>
+                <output expression="&quot;1) Franky&quot;" newline="True"/>
+                <output expression="&quot;2) Rex&quot;" newline="True"/>
+                <output expression="&quot;3) Churchill&quot;" newline="True"/>
+                <output expression="&quot;4) Le chef n'a pas de chien&quot;" newline="True"/>
+                <input variable="R&#233;ponse1"/>
+                <if expression="R&#233;ponse1 = 3">
+                    <then>
+                        <declare name="R&#233;ponse2" type="Integer" array="False" size=""/>
+                        <output expression="&quot;Question : Combien de machines a caf&#233; y a-t-il dans la salle de repos?&quot;" newline="True"/>
+                        <output expression="&quot;1) 1&quot;" newline="True"/>
+                        <output expression="&quot;2) 2&quot;" newline="True"/>
+                        <output expression="&quot;3) 3&quot;" newline="True"/>
+                        <output expression="&quot;4) 10&quot;" newline="True"/>
+                        <input variable="R&#233;ponse2"/>
+                        <if expression="R&#233;ponse2 = 4">
+                            <then>
+                                <declare name="R&#233;ponse3" type="Integer" array="False" size=""/>
+                                <output expression="&quot;Question : Quel est le meilleur anim&#233; parmi ceux-l&#224; ?&quot;" newline="True"/>
+                                <output expression="&quot;1) One Piece&quot;" newline="True"/>
+                                <output expression="&quot;2) Naruto&quot;" newline="True"/>
+                                <output expression="&quot;3) Dragon Ball&quot;" newline="True"/>
+                                <output expression="&quot;4) Bleach&quot;" newline="True"/>
+                                <input variable="R&#233;ponse3"/>
+                                <if expression="R&#233;ponse3 = 1">
+                                    <then>
+                                        <declare name="R&#233;ponse4" type="Integer" array="False" size=""/>
+                                        <output expression="&quot;Question : Quel est le nombre porte bonheur de l'agence?&quot;" newline="True"/>
+                                        <output expression="&quot;1) 4&quot;" newline="True"/>
+                                        <output expression="&quot;2) 8&quot;" newline="True"/>
+                                        <output expression="&quot;3) 1&quot;" newline="True"/>
+                                        <output expression="&quot;4) 0&quot;" newline="True"/>
+                                        <input variable="R&#233;ponse4"/>
+                                        <if expression="R&#233;ponse4 = 3">
+                                            <then>
+                                                <output expression="&quot;R&#233;ponses justes&quot;" newline="True"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                <assign variable="i" expression="0"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                        <assign variable="i" expression="0"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                <assign variable="i" expression="0"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

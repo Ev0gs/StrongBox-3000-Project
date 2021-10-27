@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pierr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-09 07:13:04 "/>
+        <attribute name="created" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDg7IjExOjE1OjQxICI7Mjc3OA=="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjA0OjQ0ICI7MjtwaWVycjtMQVBUT1AtMkk1R01ERk87MjAyMC0xMS0wNzsiMDk6MTc6MzQgIjthbGdvcml0aG1lIHByaW5jaXBhbC5mcHJnOzgzMzk="/>
+        <attribute name="edited" value="cGllcnI7TEFQVE9QLTJJNUdNREZPOzIwMjAtMTEtMDk7IjA3OjEzOjA0ICI7NTsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i == 0">
+                <declare name="c" type="Integer" array="False" size=""/>
+                <declare name="mprime" type="Integer" array="False" size=""/>
+                <output expression="&quot;Entrez votre lettre d'agent :&quot;" newline="True"/>
+                <declare name="Lettre" type="String" array="False" size=""/>
+                <input variable="Lettre"/>
+                <declare name="m" type="Integer" array="False" size=""/>
+                <assign variable="m" expression="randbetween(-2881,2881)"/>
+                <declare name="e" type="Integer" array="False" size=""/>
+                <if expression="Lettre=&quot;A&quot;">
+                    <then>
+                        <assign variable="e" expression="601"/>
+                        <assign variable="c" expression="encrypt(m, e)"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="Lettre=&quot;B&quot;">
+                            <then>
+                                <assign variable="e" expression="619"/>
+                                <assign variable="c" expression="encrypt(m, e)"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <if expression="Lettre=&quot;C&quot;">
+                                    <then>
+                                        <assign variable="e" expression="631"/>
+                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                        <assign variable="i" expression="1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Lettre=&quot;D&quot;">
+                                            <then>
+                                                <assign variable="e" expression="641"/>
+                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                <assign variable="i" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Lettre=&quot;E&quot;">
+                                                    <then>
+                                                        <assign variable="e" expression="647"/>
+                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                        <assign variable="i" expression="1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="Lettre=&quot;F&quot;">
+                                                            <then>
+                                                                <assign variable="e" expression="653"/>
+                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                <assign variable="i" expression="1"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="Lettre=&quot;H&quot;">
+                                                                    <then>
+                                                                        <assign variable="e" expression="661"/>
+                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                        <assign variable="i" expression="1"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="Lettre=&quot;I&quot;">
+                                                                            <then>
+                                                                                <assign variable="e" expression="673"/>
+                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                <assign variable="i" expression="1"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <if expression="Lettre=&quot;J&quot;">
+                                                                                    <then>
+                                                                                        <assign variable="e" expression="691"/>
+                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                        <assign variable="i" expression="1"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="Lettre=&quot;K&quot;">
+                                                                                            <then>
+                                                                                                <assign variable="e" expression="701"/>
+                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                <assign variable="i" expression="1"/>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="Lettre=&quot;L&quot;">
+                                                                                                    <then>
+                                                                                                        <assign variable="e" expression="733"/>
+                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <if expression="Lettre=&quot;M&quot;">
+                                                                                                            <then>
+                                                                                                                <assign variable="e" expression="739"/>
+                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                            </then>
+                                                                                                            <else>
+                                                                                                                <if expression="Lettre=&quot;N&quot;">
+                                                                                                                    <then>
+                                                                                                                        <assign variable="e" expression="751"/>
+                                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                    </then>
+                                                                                                                    <else>
+                                                                                                                        <if expression="Lettre=&quot;O&quot;">
+                                                                                                                            <then>
+                                                                                                                                <assign variable="e" expression="797"/>
+                                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                            </then>
+                                                                                                                            <else>
+                                                                                                                                <if expression="Lettre=&quot;P&quot;">
+                                                                                                                                    <then>
+                                                                                                                                        <assign variable="e" expression="809"/>
+                                                                                                                                        <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                        <assign variable="i" expression="1"/>
+                                                                                                                                    </then>
+                                                                                                                                    <else>
+                                                                                                                                        <if expression="Lettre=&quot;Q&quot;">
+                                                                                                                                            <then>
+                                                                                                                                                <assign variable="e" expression="811"/>
+                                                                                                                                                <assign variable="c" expression="encrypt(m, e)"/>
+                                                                                                                                                <assign variable="i" expression="1"/>
+                                                                                                                                            </then>
+                                                                                                                                            <else>
+                                                                                                                                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                                                                                                                                <assign variable="i" expression="0"/>
+                                                                                                                                            </else>
+                                                                                                                                        </if>
+                                                                                                                                    </else>
+                                                                                                                                </if>
+                                                                                                                            </else>
+                                                                                                                        </if>
+                                                                                                                    </else>
+                                                                                                                </if>
+                                                                                                            </else>
+                                                                                                        </if>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="i == 1">
+                    <then>
+                        <output expression="&quot;Message chiffr&#233; :&quot; &amp; c" newline="True"/>
+                        <output expression="&quot;Saisissez M dans la console :&quot;" newline="True"/>
+                        <input variable="mprime"/>
+                        <if expression="mprime = m">
+                            <then>
+                                <output expression="&quot;Cl&#233; valid&#233;e&quot;" newline="True"/>
+                                <assign variable="i" expression="1"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Erreur d'authentification&quot;" newline="True"/>
+                                <assign variable="i" expression="0"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="encrypt" type="Integer" variable="c">
+        <parameters>
+            <parameter name="m" type="Integer" array="False"/>
+            <parameter name="e" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="modexp(m, e, 2881)"/>
+        </body>
+    </function>
+    <function name="modexp" type="Integer" variable="r">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="e" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <if expression="e &lt; 0">
+                <then>
+                    <output expression="&quot;unhandled case&quot;" newline="True"/>
+                    <call expression="exit(-1)"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(a == 0 || n == 1)">
+                <then>
+                    <assign variable="r" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="r" expression="1"/>
+                    <while expression="e &gt; 0">
+                        <assign variable="r" expression="(r*(a mod n)) mod n"/>
+                        <assign variable="e" expression="e - 1"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="randbetween" type="Integer" variable="number">
+        <parameters>
+            <parameter name="lower" type="Integer" array="False"/>
+            <parameter name="upper" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="random(upper)"/>
+            <while expression="number &lt; lower">
+                <assign variable="number" expression="random(upper)"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
